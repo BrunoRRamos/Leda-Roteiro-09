@@ -101,7 +101,7 @@ public class HeapImpl<T extends Comparable<T>> implements Heap<T> {
 			largest = leftIndex;
 		}
 
-		if (this.isValidIndex(rightIndex) && this.compare(position, rightIndex) < 0) {
+		if (this.isValidIndex(rightIndex) && this.compare(largest, rightIndex) < 0) {
 			largest = rightIndex;
 		}
 
